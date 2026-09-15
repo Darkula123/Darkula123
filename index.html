@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RDR2 Marathon — Marcel</title>
+<meta name="description" content="Marcel streamer Red Dead Redemption II i døgndrift fra sit værelse, indtil spillet er gennemført. Ingen genstart, ingen fast slutdato. Følg med på marcelothon.dk.">
+
+<meta property="og:title" content="RDR2 Marathon — Marcel">
+<meta property="og:description" content="Døgndrift på Twitch indtil Red Dead Redemption II er gennemført. Ingen genstart. Ingen fast slutdato.">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Special+Elite&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-badge">★</span>
+      <span class="brand-text">MARCELOTHON</span>
+    </a>
+    <nav class="site-nav">
+      <a href="#status">Status</a>
+      <a href="#stream">Stream</a>
+      <a href="#regler">Regler</a>
+      <a href="#historier">Historier</a>
+      <a class="nav-cta" href="https://twitch.tv/marcelo" target="_blank" rel="noopener">Twitch ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section id="status" class="hero">
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Et døgndrift-eksperiment</p>
+      <h1 class="hero-title">RDR2 MARATHON<br><span class="hero-title-name">med Marcel</span></h1>
+      <p class="hero-lede">
+        Marcel streamer fra sit rum, døgnet rundt, på
+        <a href="https://twitch.tv/marcelo" target="_blank" rel="noopener">twitch.tv/marcelo</a>
+        — fra han går live, og indtil han har gennemført Red Dead Redemption II.
+        Ingen genstart. Ingen fast slutdato.
+      </p>
+
+      <div id="countdown-box" class="countdown-box">
+        <p class="countdown-label" id="countdown-label">Der går live om</p>
+        <div class="countdown" id="countdown">
+          <div class="countdown-unit"><span id="cd-days">--</span><small>dage</small></div>
+          <div class="countdown-unit"><span id="cd-hours">--</span><small>timer</small></div>
+          <div class="countdown-unit"><span id="cd-minutes">--</span><small>min</small></div>
+          <div class="countdown-unit"><span id="cd-seconds">--</span><small>sek</small></div>
+        </div>
+        <p class="countdown-sub" id="countdown-sub">15. september kl. 08:00</p>
+      </div>
+
+      <div id="live-box" class="live-box hidden">
+        <span class="live-dot"></span>
+        <div>
+          <p class="live-title">TOGTET ER I GANG</p>
+          <p class="live-sub" id="live-sub">Marcel er live lige nu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stream" class="section stream-section">
+    <div class="wrap">
+      <h2 class="section-title">Streamen</h2>
+      <p class="section-lede">Direkte fra rummet — spil om dagen, sovecam om natten.</p>
+
+      <div class="stream-grid">
+        <div class="player-wrap">
+          <iframe
+            id="twitch-player"
+            src="https://player.twitch.tv/?channel=marcelo&parent=marcelothon.dk&parent=www.marcelothon.dk&muted=true"
+            allowfullscreen
+            title="Marcel — live på Twitch">
+          </iframe>
+        </div>
+        <div class="chat-wrap">
+          <iframe
+            id="twitch-chat"
+            src="https://www.twitch.tv/embed/marcelo/chat?parent=marcelothon.dk&parent=www.marcelothon.dk"
+            title="Twitch chat for marcelo">
+          </iframe>
+        </div>
+      </div>
+      <p class="stream-fallback">
+        Kan du ikke se streamen herover? Se den direkte på
+        <a href="https://twitch.tv/marcelo" target="_blank" rel="noopener">twitch.tv/marcelo</a>.
+      </p>
+    </div>
+  </section>
+
+  <section id="regler" class="section rules-section">
+    <div class="wrap">
+      <h2 class="section-title">Reglerne for togtet</h2>
+      <p class="section-lede">Enkle rammer. Alt andet er op til Red Dead Redemption II og skæbnen.</p>
+
+      <div class="rules-grid">
+        <article class="rule-card">
+          <span class="rule-number">01</span>
+          <h3>Ingen genstart</h3>
+          <p>Togtet starter én gang og kører til vejs ende. Der bliver ikke trykket reset undervejs.</p>
+        </article>
+        <article class="rule-card">
+          <span class="rule-number">02</span>
+          <h3>Ingen fast slutdato</h3>
+          <p>Marathonen slutter, når Red Dead Redemption II er gennemført — hverken før eller efter.</p>
+        </article>
+        <article class="rule-card">
+          <span class="rule-number">03</span>
+          <h3>Dagens rytme</h3>
+          <p>Marcel spiller fra morgenstunden og frem til han går i seng. Samme rytme, dag efter dag.</p>
+        </article>
+        <article class="rule-card">
+          <span class="rule-number">04</span>
+          <h3>Sovecam om natten</h3>
+          <p>Når spillet sættes på pause, overtager en sovecam resten af natten, indtil Marcel vågner igen.</p>
+        </article>
+        <article class="rule-card">
+          <span class="rule-number">05</span>
+          <h3>Der fortsættes hvor han slap</h3>
+          <p>Næste morgen genoptages spillet præcis dér, hvor det blev sat på pause aftenen før.</p>
+        </article>
+        <article class="rule-card">
+          <span class="rule-number">06</span>
+          <h3>Forvent det uventede</h3>
+          <p>Det eneste, man kan regne med, er at noget uventet før eller siden sker undervejs.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="historier" class="section stories-section">
+    <div class="wrap">
+      <h2 class="section-title">Sjove historier om Marcel</h2>
+      <p class="section-lede">
+        Lidt baggrund, inden togtet begynder. Er du med i chatten, må du meget gerne bidrage med flere.
+      </p>
+
+      <div class="stories-grid">
+        <article class="story-card">
+          <p class="story-quote">“Han har rage-quittet en hest før, den var stadig i live.”</p>
+          <p class="story-attrib">— set i chatten under en tidligere stream</p>
+        </article>
+        <article class="story-card">
+          <p class="story-quote">“Marcel har et forhold til sit tastatur, som ikke altid er lige kærligt.”</p>
+          <p class="story-attrib">— en tavs observation fra rummet</p>
+        </article>
+        <article class="story-card">
+          <p class="story-quote">“Der findes billeder af Marcel sovende på tastaturet — de ryger nok i genudsendelse.”</p>
+          <p class="story-attrib">— sovecam-arkivet</p>
+        </article>
+        <article class="story-card">
+          <p class="story-quote">“Han lovede engang at ‘lige spille videre i ti minutter’. Det holdt ikke.”</p>
+          <p class="story-attrib">— klassisk Marcel-citat</p>
+        </article>
+        <article class="story-card">
+          <p class="story-quote">“Ingen ved præcis, hvor mange kopper kaffe det tager at nå gennem en nat.”</p>
+          <p class="story-attrib">— uofficiel statistik</p>
+        </article>
+        <article class="story-card story-card--placeholder">
+          <p class="story-quote">Har du en god historie om Marcel? Send den i chatten under streamen.</p>
+          <p class="story-attrib">— din historie kan stå her</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>RDR2 Marathon — Marcel · Følg togtet på <a href="https://twitch.tv/marcelo" target="_blank" rel="noopener">twitch.tv/marcelo</a></p>
+    <p class="footer-fine">marcelothon.dk</p>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
