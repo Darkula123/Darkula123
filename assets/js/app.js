@@ -21,7 +21,7 @@
 
     var elapsedMs = Date.now() - launchTime;
     var dayNumber = Math.max(1, Math.floor(elapsedMs / 86400000) + 1);
-    liveSub.textContent = "Dag " + dayNumber + " af togtet — følg med lige nu på Twitch.";
+    liveSub.textContent = "DAG " + dayNumber + " AF TOGTET — følg med lige nu på Twitch.";
   }
 
   function tick() {
